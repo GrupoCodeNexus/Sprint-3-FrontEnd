@@ -125,6 +125,59 @@ h2, h4 {
   color: #28a745;
 }
 
+/*Carrossel Manual */
+.carousel-container {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  margin: 40px auto;
+  overflow: hidden;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+.carousel-slide {
+  display: none;
+  animation: fade 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+  background: #45a049;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
 /* Cards de Desafios */
 #cards .card {

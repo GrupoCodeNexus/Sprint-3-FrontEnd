@@ -33,7 +33,24 @@
 
   <main>
 
-
+    <div class="carousel-container">
+      <div class="carousel-slide active">
+        <h3>Slide 1</h3>
+        <p>Este é o conteúdo do primeiro slide.</p>
+      </div>
+      <div class="carousel-slide">
+        <h3>Slide 2</h3>
+        <p>Este é o conteúdo do segundo slide.</p>
+      </div>
+      <div class="carousel-slide">
+        <h3>Slide 3</h3>
+        <p>Este é o conteúdo do terceiro slide.</p>
+      </div>
+    
+      <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+      <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+    </div>
+    
     <section id="introducao">
       <div class="container card-content">
         <div class="card interno">
@@ -109,5 +126,6 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./src/js/script.js"></script>
 </body>
 </html>
