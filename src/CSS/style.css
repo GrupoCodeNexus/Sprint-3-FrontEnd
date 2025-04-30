@@ -1,106 +1,265 @@
-
-*{
+/* Reset e fonte padrão */
+* {
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-  }
-  
-  h2, h4 {
-    color: #333;
-  }
-  
+  background-color: #f4f4f9;
+  color: #333;
+}
 
-  header {
-    background-color: #24822e;
-  }
-  
-  header h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 0;
-  }
-  
+/* Navbar */
+.navbar {
+  background-color: #1c7fe1;
+  border-radius: 40px;
+  margin: 10px auto;
+  padding: 15px 50px; /* aumentei o padding */
+  width: 47%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Evita que o conteúdo fique cortado */
+}
 
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #023b77;
+  border-radius: 8px;
+}
+
+/* Seções */
+section {
+  padding: 60px 0;
+}
+
+h2, h4 {
+  color: #333;
+}
+
+/* Introdução e Soluções */
+/* Layout base dos cards */
+.card-content {
+  display: flex;
+  justify-content: center;
+}
+
+.card.interno {
+  border-radius: 12px;
+  padding: 40px 30px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  border-left: 6px solid transparent;
+}
+
+.card.interno:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Card Introdução */
+#introducao .card.interno {
+  background: linear-gradient(135deg, #fffbe6, #fff2cc);
+  border-left-color: #ffc107;
+}
+#introducao {
+  margin-bottom: 0px;
+  padding-bottom: 0;
+}
+/* Card Soluções */
+#solucoes .card.interno {
+  background: linear-gradient(135deg, #e8f5e9, #d0f0dc);
+  border-left-color: #28a745;
+}
+#solucoes {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+
+/* Títulos */
+#introducao h2,
+#solucoes h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-top: 1px;
+}
+
+/* Parágrafos */
+#introducao p,
+#solucoes p {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Ícones */
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.icone-intro {
+  color: #ffc107;
+}
+
+.icone-solucoes {
+  color: #28a745;
+}
+
+
+/* Cards de Desafios */
+#cards .card {
+  border: none;
+  transition: all 0.3s ease;
+}
+
+#cards .card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  text-align: center;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 20px;
+  flex-wrap: wrap; /* permite que quebrem em telas pequenas */
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.card.azul {
+  background-color: #aad4ff;
+}
+
+.card.verde {
+  background-color: #7fffd4;
+}
+
+.card.amarelo {
+  background-color: #fff9b1;
+}
+
+
+/* Impactos */
+#impactos ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#impactos ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.impacto-beneficio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  padding: 40px 20px;
+}
+
+.card-impacto, .card-beneficio {
+  flex: 1 1 400px;
+  padding: 24px 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.card-impacto {
+  background-color: #ffe5e5;
+  border-left: 6px solid #ff4d4d;
+}
+
+.card-beneficio {
+  background-color: #e2f7ea;
+  border-left: 6px solid #2ecc71;
+}
+
+.impacto-beneficio-container h3 {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.impacto-beneficio-container ul {
+  padding-left: 20px;
+}
+
+.impacto-beneficio-container li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333;
+  list-style: disc;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #222;
+}
+#problemas, #cards, .cards-container {
+  margin-top: 20px;
+}
+
+/* Rodapé */
+#footer {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
   .navbar {
-    background-color: #1c7fe1;
-  }
-  
-  .navbar .navbar-brand {
-    font-weight: bold;
-  }
-  
-  .navbar-nav .nav-link {
-    font-size: 1.1rem;
-    padding: 10px 15px;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    background-color: #023b77;
-  }
-  
-
-
-  .card img {
-    border-radius: 5px;
-  }
-
-  section {
-    padding: 60px 0;
-  }
-  
-  #solucoes {
-    background-color: #f8f9fa;
-  }
-  
-  #cards .card {
-    border: none;
-  }
-  
-  #cards .card-body {
-    text-align: center;
-  }
-  
-  #impactos ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  #impactos ul li {
-    margin-bottom: 10px;
-  }
-  
-
-
-  form {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-  }
-  
-  form .form-label {
-    font-weight: bold;
-  }
-  
-  form button {
     width: 100%;
-    padding: 12px;
-    background-color: #24822e;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
+    border-radius: 0;
   }
-  
-  form button:hover {
-    background-color: #22772a;
-  }
-  
-  .card{
-    transition: all 0.3s ease;
-  }
-
-  .card:hover{
-    transform: scale(1.05);
-  }
+}
+.icone-intro {
+  color: #FFD700; /* dourado, por exemplo */
+}

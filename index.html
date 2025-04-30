@@ -7,21 +7,15 @@
 
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="./src/CSS/style.css">
 </head>
 
 <body>
 
-  <header class="bg-primary text-white p-3">
-    <div class="container">
-      <h1 class="h3">SmartFlow – Armário Inteligente de Medicamentos</h1>
-    </div>
-  </header>
-
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">SmartFlow</a>
+      <a class="navbar-brand">SmartFlow</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -40,103 +34,72 @@
   <main>
 
 
-    <section id="introducao" class="py-5">
-      <div class="container">
-        <h2 class="mb-4 text-center">Introdução</h2>
-        <p class="lead text-center">O SmartFlow é um armário inteligente desenvolvido para garantir o controle e segurança no armazenamento de medicamentos. Nossa solução visa resolver problemas críticos relacionados ao acesso descontrolado e à falta de rastreabilidade no manuseio de medicamentos.</p>
-      </div>
-    </section>
-
- 
-    <section id="solucoes" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="mb-4 text-center">Soluções</h2>
-        <p class="text-center">O SmartFlow oferece um sistema de armazenamento seguro que permite o controle rigoroso de acesso aos medicamentos e o registro de todas as retiradas, proporcionando maior segurança e eficiência no uso de medicamentos.</p>
-      </div>
-    </section>
-
-
-    <section id="cards" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="mb-4 text-center">Desafios Resolvidos</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="./src/exemplo.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Descrição">
-              <div class="card-body">
-                <h5 class="card-title">Acesso descontrolado</h5>
-                <p class="card-text">Evita que medicamentos sejam acessados por pessoas não autorizadas.</p>
-              </div>
-            </div>
+    <section id="introducao">
+      <div class="container card-content">
+        <div class="card interno">
+          <div class="icon">
+            <i class="fas fa-lightbulb icone-intro"></i>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="./src/exemplo2.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Descrição">
-              <div class="card-body">
-                <h5 class="card-title">Falta de rastreabilidade</h5>
-                <p class="card-text">Cada retirada é registrada com data, hora, profissional e item retirado.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="./src/exemplo3.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Descrição">
-              <div class="card-body">
-                <h5 class="card-title">Segurança dos pacientes</h5>
-                <p class="card-text">Ajuda a evitar erros e garante a disponibilidade correta dos remédios.</p>
-              </div>
-            </div>
-          </div>
+          <h2>Introdução</h2>
+          <p>O SmartFlow é um armário inteligente desenvolvido para garantir o controle e segurança no armazenamento de medicamentos. Nossa solução visa resolver problemas críticos relacionados ao acesso descontrolado e à falta de rastreabilidade no manuseio de medicamentos.</p>
         </div>
       </div>
     </section>
-
-
-    <section id="impactos" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="mb-4 text-center">Impactos do Problema e Benefícios da Solução</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <h4>Impactos Negativos do Problema</h4>
-            <ul>
-              <li>Acesso não controlado aos medicamentos</li>
-              <li>Erros na administração de medicamentos</li>
-              <li>Falta de rastreabilidade dos itens retirados</li>
-            </ul>
+    
+    <section id="solucoes">
+      <div class="container card-content">
+        <div class="card interno">
+          <div class="icon">
+            <i class="fas fa-cogs icone-solucoes"></i>
           </div>
-          <div class="col-md-6">
-            <h4>Benefícios da Solução SmartFlow</h4>
-            <ul>
-              <li>Controle rigoroso de acesso aos medicamentos</li>
-              <li>Rastreabilidade de retiradas, com dados registrados</li>
-              <li>Maior segurança para pacientes e profissionais de saúde</li>
-            </ul>
-          </div>
+          <h2>Soluções</h2>
+          <p>O SmartFlow oferece um sistema de armazenamento seguro que permite o controle rigoroso de acesso aos medicamentos e o registro de todas as retiradas, proporcionando maior segurança e eficiência no uso de medicamentos.</p>
         </div>
-      </div>
-    </section>
+      </div>    
 
-
-    <section id="contato" class="py-5">
-      <div class="container">
-        <h2 class="mb-4 text-center">Entre em Contato</h2>
-        <form class="mx-auto" style="max-width: 600px;">
-          <div class="mb-3">
-            <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome" required>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" required>
-          </div>
-          <div class="mb-3">
-            <label for="mensagem" class="form-label">Mensagem</label>
-            <textarea class="form-control" id="mensagem" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+    <div class="cards-container">
+      <div class="card azul">
+        <i class="fa-solid fa-id-card icon"></i>
+        <h3>Acesso descontrolado</h3>
+        <p>Evita que medicamentos sejam acessados por pessoas não autorizadas.</p>
       </div>
-    </section>
+    
+      <div class="card verde">
+        <i class="fa-solid fa-location-crosshairs icon" style="color: red;"></i>
+        <h3>Falta de rastreabilidade</h3>
+        <p>Cada retirada é registrada com data, hora, profissional e item retirado.</p>
+      </div>
+    
+      <div class="card amarelo">
+        <i class="fa-solid fa-notes-medical icon" style="color: #28a745;"></i>
+        <h3>Segurança dos pacientes</h3>
+        <p>Ajuda a evitar erros e garante a disponibilidade correta dos remédios.</p>
+      </div>
+    </div>
+    
+
+    <h2 class="section-title">Impactos do Problema e Benefícios da Solução</h2>
+
+<div class="impacto-beneficio-container">
+  <div class="card-impacto">
+    <h3>Impactos Negativos do Problema</h3>
+    <ul>
+      <li>Acesso não controlado aos medicamentos</li>
+      <li>Erros na administração de medicamentos</li>
+      <li>Falta de rastreabilidade dos itens retirados</li>
+    </ul>
+  </div>
+
+  <div class="card-beneficio">
+    <h3>Benefícios da Solução SmartFlow</h3>
+    <ul>
+      <li>Controle rigoroso de acesso aos medicamentos</li>
+      <li>Rastreabilidade de retiradas, com dados registrados</li>
+      <li>Maior segurança para pacientes e profissionais de saúde</li>
+    </ul>
+  </div>
+</div>
+
 
   </main>
 
