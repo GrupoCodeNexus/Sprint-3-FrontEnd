@@ -24,7 +24,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="./img/logo.png" alt="SmartFlow Logo" height="40" class="me-2">
+        <img src="./src/img/logo.jpg" alt="SmartFlow Logo" height="40" class="me-2">
         <span class="fw-bold">SmartFlow</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -175,43 +175,67 @@
       </div>
     </section>
 
-    <section id="impactos" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-5">Impactos: Antes vs Depois</h2>
-        <div class="row g-4">
-          <div class="col-md-6">
-            <div class="card h-100 border-danger impact-card">
-              <div class="card-header bg-danger text-white">
-                <h4 class="mb-0"><i class="fas fa-times-circle me-2"></i> Situação Atual</h4>
-              </div>
-              <div class="card-body">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><i class="fas fa-times text-danger me-2"></i> 30% de perdas de medicamentos</li>
-                  <li class="list-group-item"><i class="fas fa-times text-danger me-2"></i> 4 horas semanais gastas com inventário</li>
-                  <li class="list-group-item"><i class="fas fa-times text-danger me-2"></i> 15% de erros na administração</li>
-                  <li class="list-group-item"><i class="fas fa-times text-danger me-2"></i> Sem rastreamento de responsáveis</li>
-                </ul>
-              </div>
-            </div>
+<!-- Seção Impactos -->
+<section id="impactos" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Comparação: Método Tradicional vs SmartFlow</h2>
+    <div class="row g-4">
+      <!-- Coluna Problemas -->
+      <div class="col-md-6">
+        <div class="card h-100 border-danger impact-card">
+          <div class="card-header bg-danger text-white">
+            <h4 class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i> Método Tradicional</h4>
           </div>
-          <div class="col-md-6">
-            <div class="card h-100 border-success impact-card">
-              <div class="card-header bg-success text-white">
-                <h4 class="mb-0"><i class="fas fa-check-circle me-2"></i> Com SmartFlow</h4>
-              </div>
-              <div class="card-body">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Redução de 90% nas perdas</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Inventário automático</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Erros próximos de zero</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Rastreamento completo</li>
-                </ul>
-              </div>
-            </div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <i class="fas fa-clock text-danger me-2"></i>
+                <strong>Processos manuais:</strong> Tempo gasto com planilhas e registros
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-user-shield text-danger me-2"></i>
+                <strong>Controle de acesso limitado:</strong> Dificuldade em restringir áreas sensíveis
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-search text-danger me-2"></i>
+                <strong>Rastreamento incompleto:</strong> Falta de histórico detalhado das movimentações
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
+      
+      <!-- Coluna Solução -->
+      <div class="col-md-6">
+        <div class="card h-100 border-success impact-card">
+          <div class="card-header bg-success text-white">
+            <h4 class="mb-0"><i class="fas fa-check-circle me-2"></i> SmartFlow</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <i class="fas fa-bolt text-success me-2"></i>
+                <strong>Automatização:</strong> Redução significativa no tempo de gestão
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-fingerprint text-success me-2"></i>
+                <strong>Controle de acesso:</strong> Credenciais individuais para cada profissional
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-history text-success me-2"></i>
+                <strong>Registro completo:</strong> Histórico detalhado de todas as movimentações
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-bell text-success me-2"></i>
+                <strong>Alertas inteligentes:</strong> Avisos sobre validade e reposição
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section id="contato" class="py-5 bg-light">
       <div class="container">
