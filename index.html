@@ -3,87 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SmartFlow | Armário Inteligente de Medicamentos</title>
+  <meta name="description" content="SmartFlow - Sistema Inteligente de Gestão de Medicamentos para hospitais e clínicas">
+  <title>SmartFlow | Gestão Inteligente de Medicamentos</title>
+  
 
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="./src/CSS/style.css">
 </head>
-
 <body>
-
-  <header class="bg-primary text-white p-3">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
-      <h1 class="h3">SmartFlow – Armário Inteligente de Medicamentos</h1>
-    </div>
-  </header>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">SmartFlow</a>
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./img/logo.png" alt="SmartFlow Logo" height="40" class="me-2">
+        <span class="fw-bold">SmartFlow</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#introducao">Início</a></li>
-          <li class="nav-item"><a class="nav-link" href="#solucoes">Soluções</a></li>
-          <li class="nav-item"><a class="nav-link" href="#cards">Desafios</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#problema">Problema</a></li>
+          <li class="nav-item"><a class="nav-link" href="#solucao">Solução</a></li>
           <li class="nav-item"><a class="nav-link" href="#impactos">Impactos</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <main>
-
-
-    <section id="introducao" class="py-5">
-      <div class="container">
-        <h2 class="mb-4 text-center">Introdução</h2>
-        <p class="lead text-center">O SmartFlow é um armário inteligente desenvolvido para garantir o controle e segurança no armazenamento de medicamentos. Nossa solução visa resolver problemas críticos relacionados ao acesso descontrolado e à falta de rastreabilidade no manuseio de medicamentos.</p>
-      </div>
-    </section>
-
  
-    <section id="solucoes" class="py-5 bg-light">
+  <main>
+    <section id="inicio" class="hero-section">
       <div class="container">
-        <h2 class="mb-4 text-center">Soluções</h2>
-        <p class="text-center">O SmartFlow oferece um sistema de armazenamento seguro que permite o controle rigoroso de acesso aos medicamentos e o registro de todas as retiradas, proporcionando maior segurança e eficiência no uso de medicamentos.</p>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold mb-4">Gestão Inteligente de Medicamentos</h1>
+            <p class="lead mb-4">Solução completa para fluxo seguro de medicamentos em ambientes hospitalares com tecnologia de ponta</p>
+            <a href="#contato" class="btn btn-accent btn-lg px-4 me-2">Solicitar Demonstração</a>
+            <a href="#solucao" class="btn btn-outline-light btn-lg px-4">Saiba Mais</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="./src/img/exemplo3.jpg" alt="Sistema SmartFlow" class="img-fluid rounded-3 shadow">
+          </div>
+        </div>
       </div>
     </section>
 
-
-    <section id="cards" class="py-5 bg-light">
+    <section id="sobre" class="py-5 bg-light">
       <div class="container">
-        <h2 class="mb-4 text-center">Desafios Resolvidos</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="./src/exemplo.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Descrição">
-              <div class="card-body">
-                <h5 class="card-title">Acesso descontrolado</h5>
-                <p class="card-text">Evita que medicamentos sejam acessados por pessoas não autorizadas.</p>
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="display-5 fw-bold mb-3">Sobre o SmartFlow</h2>
+            <p class="lead">Otimizando o fluxo de medicamentos em ambientes de saúde</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm card-hover">
+              <div class="card-body text-center p-4">
+                <div class="feature-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h5 class="card-title">Segurança</h5>
+                <p class="card-text">Controle de acesso garantindo que apenas pessoal autorizado tenha acesso aos medicamentos.</p>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="./src/exemplo2.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Descrição">
-              <div class="card-body">
-                <h5 class="card-title">Falta de rastreabilidade</h5>
-                <p class="card-text">Cada retirada é registrada com data, hora, profissional e item retirado.</p>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm card-hover">
+              <div class="card-body text-center p-4">
+                <div class="feature-icon">
+                  <i class="fas fa-clipboard-check"></i>
+                </div>
+                <h5 class="card-title">Rastreabilidade</h5>
+                <p class="card-text">Registro completo de todas as movimentações com data, hora e responsável.</p>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="./src/exemplo3.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Descrição">
-              <div class="card-body">
-                <h5 class="card-title">Segurança dos pacientes</h5>
-                <p class="card-text">Ajuda a evitar erros e garante a disponibilidade correta dos remédios.</p>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm card-hover">
+              <div class="card-body text-center p-4">
+                <div class="feature-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h5 class="card-title">Eficiência</h5>
+                <p class="card-text">Redução de erros e aumento da produtividade da equipe médica e farmacêutica.</p>
               </div>
             </div>
           </div>
@@ -91,57 +106,186 @@
       </div>
     </section>
 
-
-    <section id="impactos" class="py-5 bg-light">
+    <section id="problema" class="py-5">
       <div class="container">
-        <h2 class="mb-4 text-center">Impactos do Problema e Benefícios da Solução</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <h4>Impactos Negativos do Problema</h4>
-            <ul>
-              <li>Acesso não controlado aos medicamentos</li>
-              <li>Erros na administração de medicamentos</li>
-              <li>Falta de rastreabilidade dos itens retirados</li>
-            </ul>
+        <h2 class="text-center mb-5">O Problema Atual</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm card-hover">
+              <div class="card-body text-center p-4">
+                <div class="feature-icon text-danger">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h5 class="card-title text-danger">Falta de controle</h5>
+                <p class="card-text">Retiradas manuais sem registros claros aumentam o risco de erros e perdas.</p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <h4>Benefícios da Solução SmartFlow</h4>
-            <ul>
-              <li>Controle rigoroso de acesso aos medicamentos</li>
-              <li>Rastreabilidade de retiradas, com dados registrados</li>
-              <li>Maior segurança para pacientes e profissionais de saúde</li>
-            </ul>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm card-hover">
+              <div class="card-body text-center p-4">
+                <div class="feature-icon text-danger">
+                  <i class="fas fa-unlock-alt"></i>
+                </div>
+                <h5 class="card-title text-danger">Acesso livre</h5>
+                <p class="card-text">Qualquer pessoa pode acessar medicamentos sem restrição ou monitoramento.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm card-hover">
+              <div class="card-body text-center p-4">
+                <div class="feature-icon text-danger">
+                  <i class="fas fa-search-minus"></i>
+                </div>
+                <h5 class="card-title text-danger">Falta de rastreabilidade</h5>
+                <p class="card-text">Dificuldade em rastrear quem pegou qual medicamento e quando.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-
-    <section id="contato" class="py-5">
+    <section id="solucao" class="py-5 bg-light">
       <div class="container">
-        <h2 class="mb-4 text-center">Entre em Contato</h2>
-        <form class="mx-auto" style="max-width: 600px;">
-          <div class="mb-3">
-            <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome" required>
+        <h2 class="text-center mb-5">Nossa Solução</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h3 class="mb-4">Sistema SmartFlow</h3>
+            <p class="mb-4">Solução completa de gestão de medicamentos para ambientes hospitalares, proporcionando segurança, controle e eficiência operacional.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Controle de acesso individualizado</li>
+              <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Registro automático de movimentações</li>
+              <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Alertas de medicamentos próximos do vencimento</li>
+              <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Integração com sistemas hospitalares</li>
+            </ul>
+            <a href="#contato" class="btn btn-primary btn-lg px-4">Agende uma Demonstração</a>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" required>
+          <div class="col-lg-6">
+            <div class="card border-0 shadow">
+              <img src="./src/img/exemplo.jpg" class="card-img-top" alt="Sistema SmartFlow">
+              <div class="card-body">
+                <h5 class="card-title">Interface Intuitiva</h5>
+                <p class="card-text">Dashboard completo para gestão e monitoramento em tempo real.</p>
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="mensagem" class="form-label">Mensagem</label>
-            <textarea class="form-control" id="mensagem" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+        </div>
       </div>
     </section>
 
+    <section id="impactos" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Impactos: Antes vs Depois</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 border-danger impact-card">
+              <div class="card-header bg-danger text-white">
+                <h4 class="mb-0"><i class="fas fa-times-circle me-2"></i> Situação Atual</h4>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><i class="fas fa-times text-danger me-2"></i> 30% de perdas de medicamentos</li>
+                  <li class="list-group-item"><i class="fas fa-times text-danger me-2"></i> 4 horas semanais gastas com inventário</li>
+                  <li class="list-group-item"><i class="fas fa-times text-danger me-2"></i> 15% de erros na administração</li>
+                  <li class="list-group-item"><i class="fas fa-times text-danger me-2"></i> Sem rastreamento de responsáveis</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-success impact-card">
+              <div class="card-header bg-success text-white">
+                <h4 class="mb-0"><i class="fas fa-check-circle me-2"></i> Com SmartFlow</h4>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Redução de 90% nas perdas</li>
+                  <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Inventário automático</li>
+                  <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Erros próximos de zero</li>
+                  <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Rastreamento completo</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="text-center mb-4">Entre em Contato</h2>
+            <p class="text-center mb-5">Preencha o formulário abaixo para solicitar mais informações ou agendar uma demonstração.</p>
+            
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="nome" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="nome" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="col-md-6">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="telefone">
+              </div>
+              <div class="col-md-6">
+                <label for="instituicao" class="form-label">Instituição/Hospital</label>
+                <input type="text" class="form-control" id="instituicao">
+              </div>
+              <div class="col-12">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button class="btn btn-primary btn-lg px-5" type="submit">Enviar Mensagem</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">&copy; 2025 SmartFlow | Todos os direitos reservados</p>
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5 class="mb-3">SmartFlow</h5>
+          <p>Soluções inteligentes para gestão de medicamentos em ambientes de saúde.</p>
+          <div class="mt-3">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5 class="mb-3">Links Rápidos</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#sobre" class="text-white-50">Sobre Nós</a></li>
+            <li class="mb-2"><a href="#solucao" class="text-white-50">Nossa Solução</a></li>
+            <li class="mb-2"><a href="#impactos" class="text-white-50">Impactos</a></li>
+            <li><a href="#contato" class="text-white-50">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="mb-3">Contato</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fas fa-envelope me-2"></i> contato@smartflow.com</li>
+            <li class="mb-2"><i class="fas fa-phone me-2"></i> (11) 1234-5678</li>
+            <li><i class="fas fa-map-marker-alt me-2"></i> Av. Paulista, 1000 - São Paulo, SP</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-4 bg-secondary">
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 SmartFlow. Todos os direitos reservados.</p>
+      </div>
+    </div>
   </footer>
 
 
