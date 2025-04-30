@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sprint 3 | Sistema de Tratamentos</title>
+  <title>PharmaCart | Armário Inteligente de Medicamentos</title>
 
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
- 
+
   <link rel="stylesheet" href="./src/CSS/style.css">
 </head>
 
@@ -15,20 +15,22 @@
 
   <header class="bg-primary text-white p-3">
     <div class="container">
-      <h1 class="h3">Sistema de Tratamentos Integrado</h1>
+      <h1 class="h3">PharmaCart – Armário Inteligente de Medicamentos</h1>
     </div>
   </header>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">STI</a>
+      <a class="navbar-brand" href="#">PharmaCart</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#carrossel">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#introducao">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#solucoes">Soluções</a></li>
           <li class="nav-item"><a class="nav-link" href="#cards">Desafios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#impactos">Impactos</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
         </ul>
       </div>
@@ -37,77 +39,51 @@
 
   <main>
 
- 
-    <section id="carrossel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carrossel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2"></button>
-      </div>
 
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Slide 1">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Integração com o carrinho de suprimentos</h5>
-            <p>Reduzindo erros e aumentando a eficiência no atendimento.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Slide 2">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Foco no profissional da saúde</h5>
-            <p>Uma interface rápida e intuitiva, ideal para uso em hospitais.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Slide 3">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Tratamento humanizado</h5>
-            <p>Mais tempo para o cuidado, menos tempo com burocracia.</p>
-          </div>
-        </div>
+    <section id="introducao" class="py-5">
+      <div class="container">
+        <h2 class="mb-4 text-center">Introdução</h2>
+        <p class="lead text-center">O PharmaCart é um armário inteligente desenvolvido para garantir o controle e segurança no armazenamento de medicamentos. Nossa solução visa resolver problemas críticos relacionados ao acesso descontrolado e à falta de rastreabilidade no manuseio de medicamentos.</p>
       </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-        <span class="visually-hidden">Próximo</span>
-      </button>
     </section>
 
-   
+ 
+    <section id="solucoes" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4 text-center">Soluções</h2>
+        <p class="text-center">O PharmaCart oferece um sistema de armazenamento seguro que permite o controle rigoroso de acesso aos medicamentos e o registro de todas as retiradas, proporcionando maior segurança e eficiência no uso de medicamentos.</p>
+      </div>
+    </section>
+
+
     <section id="cards" class="py-5 bg-light">
       <div class="container">
-        <h2 class="mb-4 text-center">Desafios Atuais</h2>
+        <h2 class="mb-4 text-center">Desafios Resolvidos</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100">
-              <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Desafio 1">
+              <img src="./src/CSS/exemplo.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Descrição">
               <div class="card-body">
-                <h5 class="card-title">Falta de integração</h5>
-                <p class="card-text">Os suprimentos nem sempre acompanham o plano de tratamento.</p>
+                <h5 class="card-title">Acesso descontrolado</h5>
+                <p class="card-text">Evita que medicamentos sejam acessados por pessoas não autorizadas.</p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Desafio 2">
+              <img src="./src/CSS/exemplo2.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Descrição">
               <div class="card-body">
-                <h5 class="card-title">Erros de medicação</h5>
-                <p class="card-text">A ausência de rastreabilidade aumenta riscos para o paciente.</p>
+                <h5 class="card-title">Falta de rastreabilidade</h5>
+                <p class="card-text">Cada retirada é registrada com data, hora, profissional e item retirado.</p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Desafio 3">
+              <img src="./src/CSS/exemplo3.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;" alt="Descrição">
               <div class="card-body">
-                <h5 class="card-title">Tempo desperdiçado</h5>
-                <p class="card-text">Buscar itens manualmente toma tempo valioso do profissional.</p>
+                <h5 class="card-title">Segurança dos pacientes</h5>
+                <p class="card-text">Ajuda a evitar erros e garante a disponibilidade correta dos remédios.</p>
               </div>
             </div>
           </div>
@@ -115,7 +91,32 @@
       </div>
     </section>
 
-  
+
+    <section id="impactos" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4 text-center">Impactos do Problema vs Benefícios da Solução</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Impactos Negativos do Problema</h4>
+            <ul>
+              <li>Acesso não controlado aos medicamentos</li>
+              <li>Erros na administração de medicamentos</li>
+              <li>Falta de rastreabilidade dos itens retirados</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h4>Benefícios da Solução PharmaCart</h4>
+            <ul>
+              <li>Controle rigoroso de acesso aos medicamentos</li>
+              <li>Rastreabilidade de retiradas, com dados registrados</li>
+              <li>Maior segurança para pacientes e profissionais de saúde</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <section id="contato" class="py-5">
       <div class="container">
         <h2 class="mb-4 text-center">Entre em Contato</h2>
@@ -140,7 +141,7 @@
   </main>
 
   <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">&copy; 2025 Sistema de Tratamentos Integrado | Todos os direitos reservados</p>
+    <p class="mb-0">&copy; 2025 PharmaCart | Todos os direitos reservados</p>
   </footer>
 
 

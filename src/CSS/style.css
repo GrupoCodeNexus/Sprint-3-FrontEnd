@@ -1,93 +1,95 @@
-\body {
+
+body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f7f9fc;
+    background-color: #f4f4f9;
+  }
+  
+  h2, h4 {
     color: #333;
   }
   
+
   header {
-    background-color: #0077b6;
-    color: #fff;
-    padding: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background-color: #007bff;
   }
   
   header h1 {
-    margin: 0;
-    font-size: 24px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0;
   }
   
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-    display: flex;
-    gap: 15px;
+
+  .navbar {
+    background-color: #343a40;
   }
   
-  nav a {
-    color: #fff;
-    text-decoration: none;
+  .navbar .navbar-brand {
     font-weight: bold;
   }
   
-  main {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 15px;
   }
   
+  .navbar-nav .nav-link:hover {
+    background-color: #007bff;
+  }
+  
+
+
+  .card img {
+    border-radius: 5px;
+  }
+
   section {
-    margin-bottom: 60px;
+    padding: 60px 0;
   }
   
-  section h2 {
-    color: #023e8a;
-    margin-bottom: 15px;
+  #solucoes {
+    background-color: #f8f9fa;
   }
   
-  .impacto-container {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-  }
-  
-  .impacto {
-    flex: 1;
-    background-color: #e0f0ff;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-  }
-  
-  input, textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-  }
-  
-  button {
-    padding: 10px;
-    background-color: #0077b6;
-    color: white;
+  #cards .card {
     border: none;
-    border-radius: 6px;
-    cursor: pointer;
   }
   
-  footer {
-    background-color: #023e8a;
-    color: white;
+  #cards .card-body {
     text-align: center;
-    padding: 15px;
+  }
+  
+  #impactos ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #impactos ul li {
+    margin-bottom: 10px;
+  }
+  
+
+
+  form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  form .form-label {
+    font-weight: bold;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
   }
   
