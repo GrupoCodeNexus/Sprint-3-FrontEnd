@@ -4,21 +4,14 @@
 Solução front-end para visualização de um sistema de gestão de medicamentos em ambientes hospitalares, desenvolvido como projeto acadêmico.
 
 ## Equipe
-| Nome                      | RM      | Contribuição Principal |
-
-| Kayque Carvalho da Silva  | 561189  | Estrutura HTML        |
-| Francisco Vargas Marçal   | 560322  | Estilos CSS           |
-| Matheus Ikeda             | 559483  | Componentes Bootstrap |
-| Marcelo Affonso           | 559790  | Documentação          |
-
-## Tecnologias Não Utilizadas
-- JavaScript
-- Back-end
-- Banco de dados
+| Kayque Carvalho da Silva  | 561189
+| Francisco Vargas Marçal   | 560322
+| Matheus Ikeda             | 559483 
+| Marcelo Affonso           | 559790  
 
 ## Tecnologias Utilizadas
 - HTML5 Semântico
-- CSS3 Puro
+- CSS3 
 - Bootstrap 5
 - Font Awesome 6
 - Google Fonts
